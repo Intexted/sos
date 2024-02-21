@@ -130,8 +130,7 @@ function Navbar() {
               className="mr-auto text-xl flex gap-2 items-center font-semibold leading-none"
               href="/"
             >
-              <img src="/sos.svg" alt="logo" height={50} width={50} />
-              <h2>SOS Urgence</h2>
+              <img src="/sos-1.svg" alt="logo" width={150} />
             </a>
 
             <button
