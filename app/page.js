@@ -1,112 +1,148 @@
 import Image from "next/image";
 
 export default function Home() {
+  const services = [
+    {
+      title: "Médecine d’Urgence",
+      image: "doctor.svg",
+      description:
+        " SOS Urgence est dotée d’une équipe d’urgentistes compétente qui assure une permanence de soins.",
+    },
+    {
+      title: "Hospitalisation à Domicile",
+      image: "home.svg",
+      description:
+        "SOS Urgence propose l’hospitalisation à domicile pour se rétablirchez soi entouré de ses proches.",
+    },
+    {
+      title: "Ambulance Equipée",
+      image: "ambulance.svg",
+      description:
+        "SOS Urgence met à votre disposition un transport médicalisé pour être accompagné dans les meilleures conditions.",
+    },
+  ];
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="flex min-h-screen flex-col items-start py-5 px-16">
+      {/*Hero Image With Call to Action Btns*/}
+      <div
+        className="hero min-h-96 rounded-lg w-full mb-10"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(https://images.pexels.com/photos/6754163/pexels-photo-6754163.jpeg)",
+        }}
+      >
+        <div className="hero-content text-center">
+          <div className="max-w-5xl text-gray-50">
+            <h1
+              className="text-4xl font-bold capitalize"
+              style={{
+                textShadow: "1px 1px 2px rgba(0, 0, 0, 0.5)",
+              }}
+            >
+              SOS AMBULANCES MÉDECINS: RABAT - SALE - TEMARA
+              <br />
+              Au +212666-666666
+            </h1>
+
+            <p className="py-6 text-lg font-semibold">
+              Découvrez nos services médicaux d&apos;urgence à domicile ! Nos
+              médecins qualifiés sont disponibles 24/7 pour des consultations
+              rapides et efficaces. Recevez des soins de qualité chez vous, que
+              ce soit pour une urgence médicale ou une simple consultation.
+              Notre service d&apos;ambulance est également prêt pour des
+              transports médicalisés. Contactez-nous dès maintenant pour une
+              assistance médicale rapide et fiable !
+            </p>
+            <button className="btn bg-[#15213C] w-1/3 font-semibold text-white hover:text-black">
+              Appelez-nous.
+            </button>
+          </div>
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+      {/*Nos Services*/}
+      <h2 className="font-semibold text-3xl">Nos Services:</h2>
+      <div className="w-full flex flex-col md:flex-row gap-3 items-center mt-5 mb-10">
+        {services.map((item, index) => (
+          <div
+            key={index}
+            className="w-full border-2 rounded-md shadow-sm px-2 py-5 gap-5 md:w-1/3 flex flex-col md:gap-2 items-center justify-center"
+          >
+            <img src={`/${item.image}`} width={140} alt="" />
+            <h3 className="text-2xl font-semibold">{item.title}</h3>
+            <p className="px-5 text-center">{item.description}</p>
+          </div>
+        ))}
+      </div>
+      {/*Form To Contact Us*/}
+      <div className="flex flex-col md:flex-row justify-between items-start w-full">
+        <div className="w-1/2">
+          <h2 className="font-semibold text-3xl mb-5">Prenez Un Rendez-Vous</h2>
+          <form className="w-full px-5">
+            <div className="flex gap-5 mb-5">
+              <label className="form-control  w-full">
+                <input
+                  type="text"
+                  placeholder="Prénom"
+                  className="input input-bordered w-full "
+                />
+              </label>
+              <label className="form-control  w-full">
+                <input
+                  type="text"
+                  placeholder="Nom"
+                  className="input input-bordered w-full "
+                />
+              </label>
+            </div>
+            <div className="flex gap-5 mb-5">
+              <label className="form-control  w-full">
+                <input
+                  type="text"
+                  placeholder="E-mail"
+                  className="input input-bordered w-full "
+                />
+              </label>
+              <label className="form-control  w-full">
+                <input
+                  type="text"
+                  placeholder="Téléphone"
+                  className="input input-bordered w-full "
+                />
+              </label>
+            </div>
+            <label className="form-control">
+              <textarea
+                className="textarea textarea-bordered h-24"
+                placeholder="Votre Message"
+              ></textarea>
+            </label>
+            <button className="btn bg-[#F19C1A] hover:text-black text-white mt-5 font-semibold w-full">
+              Envoyer
+            </button>
+          </form>
+        </div>
+        <div>
+          <img src="/stethoscope.png" width={500} alt="" />
+        </div>
+      </div>
+      {/*Maps*/}
+      <div className="w-full mt-10">
+        <h2 className="font-semibold text-3xl mb-5">Notre Localisation</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13226.759457209768!2d-6.7533261!3d34.0261709!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda76a771f082c8f%3A0x20c2f08a6c95a48!2sHospital%20Moulay%20Abdellah!5e0!3m2!1sen!2sma!4v1708526531874!5m2!1sen!2sma"
+          h
+          style={{ border: 0, width: "100%", height: "300px" }}
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
         />
       </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      {/*Contact*/}
+      <h2 className="font-semibold text-3xl mt-5">Contact</h2>
+      <div className="pl-2 pt-2">
+        <h4>Email:</h4>
+        <h4>Téléphone:</h4>
+        <h4>Address:</h4>
       </div>
     </main>
   );

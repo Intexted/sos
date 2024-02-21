@@ -1,0 +1,178 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 65" height="100px">
+    <defs>
+        <style>
+            svg {
+                perspective: 700px;
+                transform-style: preserve-3d;
+            }
+
+
+
+            .cls-1 {
+                fill: none;
+            }
+
+
+            .cls-1,
+            .cls-2 {
+                stroke: #FFF;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 3px;
+
+            }
+
+            .hand {
+                stroke-linecap: square;
+                transform: rotateX(180deg);
+                transform-origin: center 18px;
+                stroke: #FFF;
+                animation: move 2s alternate infinite;
+
+            }
+
+
+
+            .open {
+                transform-origin: center 13px;
+                transform: rotateX(90deg);
+                fill: #121212;
+
+            }
+
+            .open {
+                animation: open 2s alternate infinite;
+            }
+
+            .line {
+
+                fill: #FFF;
+                /* animation: move 2s  alternate infinite; */
+            }
+
+
+            .box {
+                transform: translateY(20px);
+            }
+
+            .st4 {
+                transform-origin: center 5px;
+                fill: #01A0C6;
+                transform: translateY(-40px) scale(0);
+                display: none;
+
+            }
+
+            .st5 {
+                transform-origin: 30px 0px;
+                fill: #FF8000;
+                transform: translateY(-20px) scale(0);
+                animation-delay: 1s;
+                display: none;
+            }
+
+            .st6 {
+                transform-origin: center 0px;
+                fill: #F0047F;
+                transform: translateY(-30px) scale(0);
+                animation-delay: 2s;
+
+
+            }
+
+            .st4,
+            .st5,
+            .st6 {
+                animation: additem 2s infinite;
+            }
+
+            .bg {
+                fill: #121212;
+            }
+
+
+
+            @keyframes move {
+
+                0%,
+                20%,
+                80%,
+                100% {
+                    transform: rotateX(180deg);
+                }
+
+                40%,
+                50% {
+                    transform: rotateX(0deg);
+                }
+            }
+
+            @keyframes open {
+
+                0%,
+                30%,
+                70%,
+                100% {
+                    transform: rotateX(90deg);
+                }
+
+                40%,
+                50% {
+                    transform: rotateX(40deg);
+                }
+            }
+
+            @keyframes additem {
+                0% {
+                    opacity: 0;
+                    transform: translateY(-20px) scale(0);
+
+                }
+
+                40% {
+                    opacity: 0;
+
+
+                }
+
+                51% {
+                    opacity: 1;
+                    transform: translateY(-20px) scale(1);
+
+                }
+
+                70% {
+                    opacity: 1;
+                    transform: translateY(20px) scale(0.8);
+
+                }
+
+                71% {
+                    opacity: 1;
+                    transform: translateY(-20px) scale(0);
+
+                }
+            }
+        </style>
+    </defs>
+    <title>Fichier 1</title>
+    <g class="Calque_2" data-name="Calque 2">
+
+
+
+        <g class="box">
+            <polygon class="cls-2 open" points="33.6,1.5 4.5,1.5 1.5,13.9 36.6,13.9 " />
+            <g>
+
+                <rect class="st4" x="2" y="0" height="4" width="8" />
+                <rect class="st5" x="30" y="0" height="3" width="10" />
+                <circle class="st6" cx="19.9" cy="2.9" r="4" />
+            </g>
+            <polygon class="cls-1 bg" points="36.6,13.9 32.5,36.7 5.6,36.7 1.5,13.9 " />
+
+            <path class="cls-1 hand" d="M26.4,19.3v4.3c0,4.1-3.3,7.3-7.3,7.3l0,0c-4.1,0-7.3-3.3-7.3-7.3v-4.3" />
+            <path class="line" d="M11.8,24L11.8,24c-0.8,0-1.5-0.7-1.5-1.5v-4.7h3v4.7C13.3,23.3,12.6,24,11.8,24z" />
+            <path class="line" d="M26.4,24L26.4,24c-0.8,0-1.5-0.7-1.5-1.5v-4.7h3v4.7C27.9,23.3,27.2,24,26.4,24z" />
+        </g>
+    </g>
+</svg>
