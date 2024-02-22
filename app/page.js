@@ -62,7 +62,7 @@ export default function Home() {
       </div>
 
       {/*Nos Services*/}
-      <div className="text-center md:text-left">
+      <div id="service" className="text-center md:text-left">
         <h2 className="font-semibold  text-3xl">Nos Services:</h2>
         <div className="w-full flex flex-col md:flex-row gap-3 items-center mt-5 mb-10">
           {services.map((item, index) => (
@@ -79,7 +79,7 @@ export default function Home() {
       </div>
 
       {/*About us*/}
-      <div className="pt-10 text-center md:text-left">
+      <div id="about" className="pt-10 text-center md:text-left">
         <h2 className="font-semibold text-3xl mb-5">A Propos de nous</h2>
         <div className="flex flex-col md:flex-row gap-10">
           <p className="w-full md:w-1/2 text-xl text-justify px-5">
@@ -155,7 +155,7 @@ export default function Home() {
       </div>
 
       {/*Maps*/}
-      <div className="w-full  px-3 text-center md:text-left mb-10">
+      <div id="contact" className="w-full  px-3 text-center md:text-left mb-10">
         <h2 className="font-semibold text-3xl mb-5">Notre Localisation</h2>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13226.759457209768!2d-6.7533261!3d34.0261709!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda76a771f082c8f%3A0x20c2f08a6c95a48!2sHospital%20Moulay%20Abdellah!5e0!3m2!1sen!2sma!4v1708526531874!5m2!1sen!2sma"
@@ -169,6 +169,30 @@ export default function Home() {
       </div>
 
       {/*Testimonials*/}
+      <a
+        href="https://api.whatsapp.com/send?phone=+212654845780&text=Salut "
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+          position: "fixed",
+          bottom: 10,
+          height: 50,
+          width: 50,
+          right: 10,
+          zIndex: 999,
+          borderRadius: "50%",
+          boxShadow: "rgba(0, 0, 0, 0.133) 0px 10px 40px",
+        }}
+      >
+        <img
+          src="/whatsapp.svg"
+          alt
+          height={50}
+          width={50}
+          layout="fixed"
+          className="cursor-pointer"
+        />
+      </a>
     </main>
   );
 }

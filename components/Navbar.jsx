@@ -8,15 +8,25 @@ import { useTranslation } from "react-i18next";
 function Navbar() {
   const [menuopen, setMenuopen] = useState(false);
   const { t } = useTranslation();
+  const scrollTo = (id) => {
+    setMenuopen(false);
+    window.scrollTo({
+      top: document.querySelector(`#${id}`)?.offsetTop - 100,
+      behavior: "smooth",
+    });
+  };
   return (
-    <header className="pt-2">
+    <header
+      style={{ backdropFilter: "saturate(180%) blur(5px)" }}
+      className="pt-2 sticky top-0 z-40 bg-white md:bg-[#ffffffcc]"
+    >
       <nav className="relative px-10 py-4 flex justify-between items-center ">
-        <a
+        <Link
           className="text-lg text-gray-600 flex items-center gap-3 font-semibold leading-none"
           href="/"
         >
           <img src="/sos-1.svg" alt="logo" height={200} width={200} />
-        </a>
+        </Link>
         <div
           onClick={() => setMenuopen((menuopen) => !menuopen)}
           className={` ${menuopen ? "hidden" : ""} lg:hidden`}
@@ -34,9 +44,9 @@ function Navbar() {
         </div>
         <ul className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto  lg:items-center lg:w-auto lg:space-x-6">
           <li>
-            <a className="text-sm text-[#15213C] font-bold " href="#">
+            <Link className="text-sm text-[#15213C] font-bold " href="/">
               Accueil
-            </a>
+            </Link>
           </li>
           <li className="text-gray-300">
             <svg
@@ -55,9 +65,12 @@ function Navbar() {
             </svg>
           </li>
           <li>
-            <a className="text-sm text-gray-400 hover:text-[#15213C]" href="#">
+            <h3
+              className="text-sm cursor-pointer text-gray-400 hover:text-[#15213C]"
+              onClick={() => scrollTo("about")}
+            >
               About
-            </a>
+            </h3>
           </li>
           <li className="text-gray-300">
             <svg
@@ -76,9 +89,12 @@ function Navbar() {
             </svg>
           </li>
           <li>
-            <a className="text-sm text-gray-400 hover:text-[#15213C]" href="#">
+            <h3
+              className="text-sm cursor-pointer text-gray-400 hover:text-[#15213C]"
+              onClick={() => scrollTo("service")}
+            >
               Nos Services
-            </a>
+            </h3>
           </li>
 
           <li className="text-gray-300">
@@ -98,9 +114,12 @@ function Navbar() {
             </svg>
           </li>
           <li>
-            <a className="text-sm text-gray-400 hover:text-[#15213C]" href="#">
+            <h3
+              className="text-sm cursor-pointer text-gray-400 hover:text-[#15213C]"
+              onClick={() => scrollTo("contact")}
+            >
               Contact
-            </a>
+            </h3>
           </li>
         </ul>
         <button
@@ -164,28 +183,28 @@ function Navbar() {
                 </a>
               </li>
               <li className="mb-1">
-                <a
+                <h3
                   className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                  href="#"
+                  onClick={() => scrollTo("about")}
                 >
                   About
-                </a>
+                </h3>
               </li>
               <li className="mb-1">
-                <a
+                <h3
                   className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                  href="#"
+                  onClick={() => scrollTo("service")}
                 >
                   Nos Services
-                </a>
+                </h3>
               </li>
               <li className="mb-20">
-                <a
-                  className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                  href="#"
+                <h3
+                  className="block  p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                  onClick={() => scrollTo("contact")}
                 >
                   Contact
-                </a>
+                </h3>
               </li>
               <li className="mb-1">
                 <button
@@ -210,30 +229,6 @@ function Navbar() {
           </div>
         </nav>
       </div>
-      <a
-        href="https://api.whatsapp.com/send?phone=+212654845780&text=Salut "
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{
-          position: "fixed",
-          bottom: 10,
-          height: 50,
-          width: 50,
-          right: 10,
-          zIndex: 999,
-          borderRadius: "50%",
-          boxShadow: "rgba(0, 0, 0, 0.133) 0px 10px 40px",
-        }}
-      >
-        <img
-          src="/whatsapp.svg"
-          alt
-          height={50}
-          width={50}
-          layout="fixed"
-          className="cursor-pointer"
-        />
-      </a>
     </header>
   );
 }
