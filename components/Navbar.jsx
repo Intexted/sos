@@ -216,7 +216,7 @@ function Navbar() {
         rel="noopener noreferrer"
         style={{
           position: "fixed",
-          bottom: 70,
+          bottom: 10,
           height: 50,
           width: 50,
           right: 10,

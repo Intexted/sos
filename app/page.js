@@ -1,5 +1,3 @@
-import { FaEnvelope, FaPhone, FaMapMarker } from "react-icons/fa";
-
 export default function Home() {
   const services = [
     {
@@ -28,7 +26,7 @@ export default function Home() {
         className="hero min-h-96 rounded-lg w-full mb-10"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(https://images.pexels.com/photos/6754163/pexels-photo-6754163.jpeg)",
+            "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(/hero.jpeg)",
         }}
       >
         <div className="hero-content text-center">
@@ -62,6 +60,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       {/*Nos Services*/}
       <div className="text-center md:text-left">
         <h2 className="font-semibold  text-3xl">Nos Services:</h2>
@@ -78,8 +77,32 @@ export default function Home() {
           ))}
         </div>
       </div>
+
+      {/*About us*/}
+      <div className="pt-10 text-center md:text-left">
+        <h2 className="font-semibold text-3xl mb-5">A Propos de nous</h2>
+        <div className="flex flex-col md:flex-row gap-10">
+          <p className="w-full md:w-1/2 text-xl text-justify px-5">
+            Nous offrons une gamme complète de services médicaux, y compris des
+            urgences médicales, des soins à domicile et des hospitalisations.
+            <br /> Avec notre équipe de professionnels dévoués, nous vous
+            garantissons des soins personnalisés et de qualité où que vous
+            soyez.
+            <br /> Nos ambulances sont équipées pour répondre rapidement à toute
+            urgence, et nous proposons également des hospitalisations à domicile
+            pour un suivi médical continu dans le confort de votre foyer.
+            <br />
+            Votre santé et votre bien-être sont notre priorité absolue.
+            Contactez-nous dès aujourd&apos;hui pour en savoir plus et planifier
+            votre prochaine consultation médicale.
+          </p>
+          <div className="thumb w-full md:w-[549px] px-5">
+            <img src="/about.jpeg" width={400} alt="" />
+          </div>
+        </div>
+      </div>
       {/*Form To Contact Us*/}
-      <div className="flex flex-col md:flex-row justify-between items-start w-full">
+      <div className="flex flex-col md:flex-row justify-between items-start w-full py-16">
         <div className="md:w-1/2 text-center md:text-left">
           <h2 className="font-semibold text-3xl mb-5">Prenez Un Rendez-Vous</h2>
           <form className="w-full px-5">
@@ -130,8 +153,9 @@ export default function Home() {
           <img src="/stethoscope.png" width={500} alt="" />
         </div>
       </div>
+
       {/*Maps*/}
-      <div className="w-full mt-10 px-3 text-center md:text-left">
+      <div className="w-full  px-3 text-center md:text-left mb-10">
         <h2 className="font-semibold text-3xl mb-5">Notre Localisation</h2>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13226.759457209768!2d-6.7533261!3d34.0261709!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda76a771f082c8f%3A0x20c2f08a6c95a48!2sHospital%20Moulay%20Abdellah!5e0!3m2!1sen!2sma!4v1708526531874!5m2!1sen!2sma"
@@ -143,24 +167,8 @@ export default function Home() {
           className="rounded-md"
         />
       </div>
-      {/*Contact*/}
-      <div className="text-center md:text-left w-full">
-        <h2 className="font-semibold  text-3xl mt-5">Contact</h2>
-        <div className="text-center md:text-left pl-2 pt-2">
-          <span className="flex items-center gap-1 mb-1">
-            <FaEnvelope />
-            <h4>Email: email@example.com</h4>
-          </span>
-          <span className="flex items-center gap-1 mb-1">
-            <FaPhone />
-            <h4>Téléphone: +212 654-845780</h4>
-          </span>
-          <span className="flex items-center gap-1 mb-1">
-            <FaMapMarker />
-            <h4>Address: adress example</h4>
-          </span>
-        </div>
-      </div>
+
+      {/*Testimonials*/}
     </main>
   );
 }
