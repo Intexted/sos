@@ -210,6 +210,30 @@ function Navbar() {
           </div>
         </nav>
       </div>
+      <a
+        href="https://api.whatsapp.com/send?phone=+212654845780&text=Salut "
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+          position: "fixed",
+          bottom: 70,
+          height: 50,
+          width: 50,
+          right: 10,
+          zIndex: 999,
+          borderRadius: "50%",
+          boxShadow: "rgba(0, 0, 0, 0.133) 0px 10px 40px",
+        }}
+      >
+        <img
+          src="/whatsapp.svg"
+          alt
+          height={50}
+          width={50}
+          layout="fixed"
+          className="cursor-pointer"
+        />
+      </a>
     </header>
   );
 }

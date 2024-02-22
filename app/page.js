@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { FaEnvelope, FaPhone, FaMapMarker } from "react-icons/fa";
 
 export default function Home() {
   const services = [
@@ -147,9 +147,18 @@ export default function Home() {
       <div className="text-center md:text-left w-full">
         <h2 className="font-semibold  text-3xl mt-5">Contact</h2>
         <div className="text-center md:text-left pl-2 pt-2">
-          <h4>Email: email@example.com</h4>
-          <h4>Téléphone: +212 654-845780</h4>
-          <h4>Address: adress example</h4>
+          <span className="flex items-center gap-1 mb-1">
+            <FaEnvelope />
+            <h4>Email: email@example.com</h4>
+          </span>
+          <span className="flex items-center gap-1 mb-1">
+            <FaPhone />
+            <h4>Téléphone: +212 654-845780</h4>
+          </span>
+          <span className="flex items-center gap-1 mb-1">
+            <FaMapMarker />
+            <h4>Address: adress example</h4>
+          </span>
         </div>
       </div>
     </main>
