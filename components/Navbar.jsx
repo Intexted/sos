@@ -16,11 +16,11 @@ function Navbar() {
     });
   };
   return (
-    <header
-      style={{ backdropFilter: "saturate(180%) blur(5px)" }}
-      className="pt-2 sticky top-0 z-40 bg-white md:bg-[#ffffffcc]"
-    >
-      <nav className="relative px-10 py-4 flex justify-between items-center ">
+    <header className="pt-2 sticky top-0 z-40 bg-white md:bg-[#ffffffcc]">
+      <nav
+        style={{ backdropFilter: "saturate(180%) blur(5px)" }}
+        className="relative px-10 py-4 flex justify-between items-center "
+      >
         <Link
           className="text-lg text-gray-600 flex items-center gap-3 font-semibold leading-none"
           href="/"
