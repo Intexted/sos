@@ -24,7 +24,13 @@ export const metadata = {
     "Ambulance d'Urgence Maroc",
   ],
   openGraph: {
-    images: "/opengraph-image.png",
+    images: [
+      {
+        url: "https://sos-blue-pi.vercel.app/opengraph-image.png", // Must be an absolute URL
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
 };
 
