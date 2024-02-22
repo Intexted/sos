@@ -11,6 +11,7 @@ const roboto = Roboto({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://sos-blue-pi.vercel.app/"),
   title:
     "Urgence Médicale à Domicile au Maroc: Consultation 24/7 avec Médecins Qualifiés et Service d'Ambulance",
   description:
@@ -24,13 +25,7 @@ export const metadata = {
     "Ambulance d'Urgence Maroc",
   ],
   openGraph: {
-    images: [
-      {
-        url: "https://sos-blue-pi.vercel.app/opengraph-image.png", // Must be an absolute URL
-        width: 1200,
-        height: 630,
-      },
-    ],
+    images: "/opengraph-image.png",
   },
 };
 
