@@ -23,6 +23,9 @@ export const metadata = {
     "Soins d'Urgence en Ambulance",
     "Ambulance d'Urgence Maroc",
   ],
+  openGraph: {
+    images: "/opengraph-image.png",
+  },
 };
 
 export default function RootLayout({ children }) {
