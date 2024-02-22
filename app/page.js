@@ -1,3 +1,5 @@
+import { FaPhoneAlt } from "react-icons/fa";
+
 export default function Home() {
   const services = [
     {
@@ -55,7 +57,7 @@ export default function Home() {
               href="tel:+212647478911"
               className="btn bg-[#15213C] w-full md:w-1/3 font-semibold text-white hover:text-black"
             >
-              Appelez-nous Maintenant.
+              <FaPhoneAlt /> Appelez-nous Maintenant.
             </a>
           </div>
         </div>
@@ -186,6 +188,29 @@ export default function Home() {
       >
         <img
           src="/whatsapp.svg"
+          alt
+          height={50}
+          width={50}
+          layout="fixed"
+          className="cursor-pointer"
+        />
+      </a>
+
+      <a
+        href="tel:+212647478911"
+        style={{
+          position: "fixed",
+          bottom: 10,
+          height: 50,
+          width: 50,
+          left: 10,
+          zIndex: 999,
+          borderRadius: "50%",
+          boxShadow: "rgba(0, 0, 0, 0.133) 0px 10px 40px",
+        }}
+      >
+        <img
+          src="/phone.svg"
           alt
           height={50}
           width={50}
