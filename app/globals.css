@@ -15,6 +15,10 @@
   direction: rtl;
 }
 
+.ltr {
+  direction: ltr;
+}
+
 .lang-dropdown {
   position: relative;
 }

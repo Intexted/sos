@@ -1,5 +1,7 @@
+"use client";
 import AppointmentForm from "@/components/AppointmentForm";
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 import { FaPhoneAlt } from "react-icons/fa";
 
 export default function Home() {
@@ -23,6 +25,8 @@ export default function Home() {
         "SOS Urgence met à votre disposition un transport médicalisé pour être accompagné dans les meilleures conditions.",
     },
   ];
+  const { t } = useTranslation();
+
   return (
     <main className="flex min-h-screen flex-col items-start py-5 px-2 md:px-16">
       {/*Hero Image With Call to Action Btns*/}
@@ -49,25 +53,19 @@ export default function Home() {
                 textShadow: "1px 1px 2px rgba(0, 0, 0, 0.5)",
               }}
             >
-              SOS AMBULANCES MÉDECINS: RABAT - SALE - TEMARA
+              {t("sos")}
               <br />
-              Au <span className=" underline">+212 654-845780</span>
+              {t("Au")} <span className=" underline">{t("phone")}</span>
             </h1>
 
             <p className="px-10 py-6 leading-loose text-center text-base md:text-lg font-semibold">
-              Découvrez nos services médicaux d&apos;urgence à domicile ! Nos
-              médecins qualifiés sont disponibles 24/7 pour des consultations
-              rapides et efficaces. Recevez des soins de qualité chez vous, que
-              ce soit pour une urgence médicale ou une simple consultation.
-              Notre service d&apos;ambulance est également prêt pour des
-              transports médicalisés. Contactez-nous dès maintenant pour une
-              assistance médicale rapide et fiable !
+              {t("discover")}
             </p>
             <a
               href="tel:+212647478911"
               className="btn bg-[#15213C] w-full md:w-1/3 font-semibold text-white hover:text-black"
             >
-              <FaPhoneAlt /> Appelez-nous Maintenant
+              <FaPhoneAlt /> {t("callUsNow")}
             </a>
           </div>
         </div>
@@ -131,6 +129,7 @@ export default function Home() {
       </div>
 
       {/*Testimonials*/}
+
       <a
         href="https://api.whatsapp.com/send?phone=+212654845780&text=Salut "
         target="_blank"
@@ -154,7 +153,6 @@ export default function Home() {
           className="cursor-pointer"
         />
       </a>
-
       <a
         href="tel:+212647478911"
         style={{
