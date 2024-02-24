@@ -3,8 +3,8 @@ import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 
 const resources = {
-  en: { translation: { language: "Français" } },
-  fr: { translation: { language: "English" } },
+  en: { translation: { language: "English" } },
+  fr: { translation: { language: "Français" } },
   ar: { translation: { language: "العربية" } },
 };
 

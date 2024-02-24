@@ -5,9 +5,12 @@ import Link from "next/link";
 import i18n from "@/utils/i18n";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
+import Language from "./Language";
+import useWindowDimensions from "./hooks/useWindowDimensions";
 
 function Navbar() {
   const [menuopen, setMenuopen] = useState(false);
+  const { width } = useWindowDimensions();
   const { t } = useTranslation();
   const scrollTo = (id) => {
     setMenuopen(false);
@@ -16,6 +19,7 @@ function Navbar() {
       behavior: "smooth",
     });
   };
+
   return (
     <header
       style={{
@@ -133,50 +137,7 @@ function Navbar() {
             </h3>
           </li>
         </ul>
-        <button
-          className="hidden md:flex"
-          onClick={() =>
-            i18n.changeLanguage(
-              i18n?.language === "en"
-                ? "fr"
-                : i18n?.language === "fr"
-                ? "ar"
-                : "en"
-            )
-          }
-        >
-          {i18n?.language === "en" ? (
-            <div className="flex items-center gap-2 font-semibold text-base text-gray-700">
-              <Image
-                src="/svg/fr.svg"
-                height={25}
-                width={25}
-                alt="English Flag"
-              />
-              <p>{t("language")}</p>
-            </div>
-          ) : i18n?.language === "fr" ? (
-            <div className="flex items-center gap-2 font-semibold text-base text-gray-700">
-              <Image
-                src="/svg/en.svg"
-                height={25}
-                width={25}
-                alt="French Flag"
-              />
-              <p>{t("language")}</p>
-            </div>
-          ) : (
-            <div className="flex items-center gap-2 font-semibold text-base text-gray-700">
-              <Image
-                src="/svg/ar.svg"
-                height={25}
-                width={25}
-                alt="Arabic Flag"
-              />
-              <p>{t("language")}</p>
-            </div>
-          )}
-        </button>
+        {width > 700 && <Language />}
       </nav>
       <div className={`navbar-menu relative z-50 ${!menuopen ? "hidden" : ""}`}>
         <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25" />
@@ -251,50 +212,7 @@ function Navbar() {
                 </h3>
               </li>
               <li className="mb-1">
-                <button
-                  className="flex"
-                  onClick={() =>
-                    i18n.changeLanguage(
-                      i18n?.language === "en"
-                        ? "fr"
-                        : i18n?.language === "fr"
-                        ? "ar"
-                        : "en"
-                    )
-                  }
-                >
-                  {i18n?.language === "en" ? (
-                    <div className="flex items-center gap-2 font-semibold text-base text-gray-700">
-                      <Image
-                        src="/svg/fr.svg"
-                        height={25}
-                        width={25}
-                        alt="English Flag"
-                      />
-                      <p>{t("language")}</p>
-                    </div>
-                  ) : i18n?.language === "fr" ? (
-                    <div className="flex items-center gap-2 font-semibold text-base text-gray-700">
-                      <Image
-                        src="/svg/en.svg"
-                        height={25}
-                        width={25}
-                        alt="French Flag"
-                      />
-                      <p>{t("language")}</p>
-                    </div>
-                  ) : (
-                    <div className="flex items-center gap-2 font-semibold text-base text-gray-700">
-                      <Image
-                        src="/svg/ar.svg"
-                        height={25}
-                        width={25}
-                        alt="Arabic Flag"
-                      />
-                      <p>{t("language")}</p>
-                    </div>
-                  )}
-                </button>
+                <Language />
               </li>
             </ul>
           </div>

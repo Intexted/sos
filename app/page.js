@@ -26,13 +26,22 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-start py-5 px-2 md:px-16">
       {/*Hero Image With Call to Action Btns*/}
-      <div
-        className="hero min-h-96 rounded-lg w-full mb-10"
-        style={{
-          background: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7))",
-        }}
-      >
-        <div className="hero-content text-center">
+      <div className="hero relative overflow-hidden min-h-[400px] rounded-lg w-full mb-10">
+        <Image
+          src="/hero.jpeg"
+          alt="background image"
+          priority
+          fill
+          style={{
+            height: "100%",
+            display: "flex",
+            position: "absolute",
+            width: "100%",
+            objectFit: "cover",
+          }}
+        />
+
+        <div className="hero-content h-full w-full text-center bg-[#0009]">
           <div className="max-w-5xl text-gray-50">
             <h1
               className="text-2xl md:text-4xl font-bold capitalize"
@@ -42,10 +51,10 @@ export default function Home() {
             >
               SOS AMBULANCES MÉDECINS: RABAT - SALE - TEMARA
               <br />
-              Au +212 654-845780
+              Au <span className=" underline">+212 654-845780</span>
             </h1>
 
-            <p className="py-6 text-base md:text-lg font-semibold">
+            <p className="px-10 py-6 leading-loose text-center text-base md:text-lg font-semibold">
               Découvrez nos services médicaux d&apos;urgence à domicile ! Nos
               médecins qualifiés sont disponibles 24/7 pour des consultations
               rapides et efficaces. Recevez des soins de qualité chez vous, que
@@ -58,7 +67,7 @@ export default function Home() {
               href="tel:+212647478911"
               className="btn bg-[#15213C] w-full md:w-1/3 font-semibold text-white hover:text-black"
             >
-              <FaPhoneAlt /> Appelez-nous Maintenant.
+              <FaPhoneAlt /> Appelez-nous Maintenant
             </a>
           </div>
         </div>
@@ -142,7 +151,6 @@ export default function Home() {
           alt="whatsapp logo"
           height={50}
           width={50}
-          layout="fixed"
           className="cursor-pointer"
         />
       </a>
@@ -165,7 +173,6 @@ export default function Home() {
           alt="phone logo"
           height={50}
           width={50}
-          layout="fixed"
           className="cursor-pointer"
         />
       </a>
