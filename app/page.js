@@ -149,7 +149,7 @@ export default function Home() {
         {reviews.map((item) => (
           <div
             key={item.name}
-            className="flex flex-col border p-4 rounded-md shadow-md w-fit"
+            className="flex flex-col border p-4 rounded-md shadow-md flex-1"
           >
             <div className="flex items-center gap-2">
               <div className="bg-blue-700 rounded-full text-white flex items-center justify-center w-12 h-12">
