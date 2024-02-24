@@ -46,7 +46,7 @@ function Navbar() {
           onClick={() => setMenuopen((menuopen) => !menuopen)}
           className={` ${menuopen ? "hidden" : ""} lg:hidden`}
         >
-          <button className="navbar-burger flex items-center text-blue-600 p-3">
+          <button className="navbar-burger flex items-center text-[#15213C] p-3">
             <svg
               className="block h-7 w-7 fill-current"
               viewBox="0 0 20 20"
@@ -142,9 +142,9 @@ function Navbar() {
       <div className={`navbar-menu relative z-50 ${!menuopen ? "hidden" : ""}`}>
         <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25" />
         <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
-          <div className="flex items-center mb-8">
+          <div className="flex items-center justify-between mb-8">
             <a
-              className="mr-auto text-xl flex gap-2 items-center font-semibold leading-none"
+              className="text-xl flex gap-2 items-center font-semibold leading-none"
               href="/"
             >
               <Image
