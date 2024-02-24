@@ -1,3 +1,5 @@
+import AppointmentForm from "@/components/AppointmentForm";
+import Image from "next/image";
 import { FaPhoneAlt } from "react-icons/fa";
 
 export default function Home() {
@@ -27,8 +29,7 @@ export default function Home() {
       <div
         className="hero min-h-96 rounded-lg w-full mb-10"
         style={{
-          backgroundImage:
-            "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(/hero.jpeg)",
+          background: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7))",
         }}
       >
         <div className="hero-content text-center">
@@ -72,7 +73,7 @@ export default function Home() {
               key={index}
               className="w-full border-2 rounded-md shadow-sm px-2 py-5 gap-5 md:w-1/3 flex flex-col md:gap-2 items-center justify-center"
             >
-              <img src={`/${item.image}`} width={140} alt="" />
+              <Image src={`/${item.image}`} width={140} height={170} alt="" />
               <h3 className="text-2xl font-semibold">{item.title}</h3>
               <p className="px-5 text-center">{item.description}</p>
             </div>
@@ -99,72 +100,22 @@ export default function Home() {
             votre prochaine consultation médicale.
           </p>
           <div className="thumb w-full md:w-[549px] px-5">
-            <img src="/about.jpeg" width={400} alt="" />
+            <Image src="/about.jpeg" width={400} height={350} alt="" />
           </div>
         </div>
       </div>
       {/*Form To Contact Us*/}
-      <div className="flex flex-col md:flex-row justify-between items-start w-full py-16">
-        <div className="md:w-1/2 text-center md:text-left">
-          <h2 className="font-semibold text-3xl mb-5">Prenez Un Rendez-Vous</h2>
-          <form className="w-full px-5">
-            <div className="flex gap-5 mb-5">
-              <label className="form-control  w-full">
-                <input
-                  type="text"
-                  placeholder="Prénom"
-                  className="input input-bordered w-full "
-                />
-              </label>
-              <label className="form-control  w-full">
-                <input
-                  type="text"
-                  placeholder="Nom"
-                  className="input input-bordered w-full "
-                />
-              </label>
-            </div>
-            <div className="flex gap-5 mb-5">
-              <label className="form-control  w-full">
-                <input
-                  type="text"
-                  placeholder="E-mail"
-                  className="input input-bordered w-full "
-                />
-              </label>
-              <label className="form-control  w-full">
-                <input
-                  type="text"
-                  placeholder="Téléphone"
-                  className="input input-bordered w-full "
-                />
-              </label>
-            </div>
-            <label className="form-control">
-              <textarea
-                className="textarea textarea-bordered h-24"
-                placeholder="Votre Message"
-              ></textarea>
-            </label>
-            <button className="btn bg-[#F19C1A] hover:text-black text-white mt-5 font-semibold w-full">
-              Envoyer
-            </button>
-          </form>
-        </div>
-        <div>
-          <img src="/stethoscope.png" width={500} alt="" />
-        </div>
-      </div>
+      <AppointmentForm />
 
       {/*Maps*/}
       <div id="contact" className="w-full  px-3 text-center md:text-left mb-10">
         <h2 className="font-semibold text-3xl mb-5">Notre Localisation</h2>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13226.759457209768!2d-6.7533261!3d34.0261709!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda76a771f082c8f%3A0x20c2f08a6c95a48!2sHospital%20Moulay%20Abdellah!5e0!3m2!1sen!2sma!4v1708526531874!5m2!1sen!2sma"
-          h
+          title="SoS Ambulance Location"
           style={{ border: 0, width: "100%", height: "300px" }}
           allowFullScreen
-          loading="lazy"
+          loading="eager"
           referrerPolicy="no-referrer-when-downgrade"
           className="rounded-md"
         />
@@ -186,9 +137,9 @@ export default function Home() {
           boxShadow: "rgba(0, 0, 0, 0.133) 0px 10px 40px",
         }}
       >
-        <img
+        <Image
           src="/whatsapp.svg"
-          alt
+          alt="whatsapp logo"
           height={50}
           width={50}
           layout="fixed"
@@ -209,9 +160,9 @@ export default function Home() {
           boxShadow: "rgba(0, 0, 0, 0.133) 0px 10px 40px",
         }}
       >
-        <img
+        <Image
           src="/phone.svg"
-          alt
+          alt="phone logo"
           height={50}
           width={50}
           layout="fixed"

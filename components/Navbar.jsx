@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import i18n from "@/utils/i18n";
 import { useTranslation } from "react-i18next";
+import Image from "next/image";
 
 function Navbar() {
   const [menuopen, setMenuopen] = useState(false);
@@ -16,16 +17,26 @@ function Navbar() {
     });
   };
   return (
-    <header className="pt-2 sticky top-0 z-40 bg-white md:bg-[#ffffffcc]">
+    <header
+      style={{
+        direction: i18n?.language === "ar" ? "rtl" : "ltr",
+      }}
+      className="pt-2 sticky top-0 z-40 bg-white md:bg-[#ffffffcc]"
+    >
       <nav
         style={{ backdropFilter: "saturate(180%) blur(5px)" }}
-        className="relative px-10 py-4 flex justify-between items-center "
+        className="relative px-5 md:px-16 py-4 flex justify-between items-center "
       >
         <Link
           className="text-lg text-gray-600 flex items-center gap-3 font-semibold leading-none"
           href="/"
         >
-          <img src="/sos-1.svg" alt="logo" height={200} width={200} />
+          <Image
+            src={`${i18n?.language === "ar" ? "/sos-ar.svg" : "/sos-1.svg"}`}
+            alt="logo"
+            height={200}
+            width={200}
+          />
         </Link>
         <div
           onClick={() => setMenuopen((menuopen) => !menuopen)}
@@ -125,17 +136,43 @@ function Navbar() {
         <button
           className="hidden md:flex"
           onClick={() =>
-            i18n.changeLanguage(i18n?.language === "fr" ? "en" : "fr")
+            i18n.changeLanguage(
+              i18n?.language === "en"
+                ? "fr"
+                : i18n?.language === "fr"
+                ? "ar"
+                : "en"
+            )
           }
         >
-          {i18n?.language === "fr" ? (
+          {i18n?.language === "en" ? (
             <div className="flex items-center gap-2 font-semibold text-base text-gray-700">
-              <img src="/svg/en.svg" height={25} width={25} alt="" />
+              <Image
+                src="/svg/fr.svg"
+                height={25}
+                width={25}
+                alt="English Flag"
+              />
+              <p>{t("language")}</p>
+            </div>
+          ) : i18n?.language === "fr" ? (
+            <div className="flex items-center gap-2 font-semibold text-base text-gray-700">
+              <Image
+                src="/svg/en.svg"
+                height={25}
+                width={25}
+                alt="French Flag"
+              />
               <p>{t("language")}</p>
             </div>
           ) : (
             <div className="flex items-center gap-2 font-semibold text-base text-gray-700">
-              <img src="/svg/fr.svg" height={25} width={25} alt="" />
+              <Image
+                src="/svg/ar.svg"
+                height={25}
+                width={25}
+                alt="Arabic Flag"
+              />
               <p>{t("language")}</p>
             </div>
           )}
@@ -149,7 +186,14 @@ function Navbar() {
               className="mr-auto text-xl flex gap-2 items-center font-semibold leading-none"
               href="/"
             >
-              <img src="/sos-1.svg" alt="logo" width={150} />
+              <Image
+                src={`${
+                  i18n?.language === "ar" ? "/sos-ar.svg" : "/sos-1.svg"
+                }`}
+                alt="logo"
+                width={150}
+                height={150}
+              />
             </a>
 
             <button
@@ -208,18 +252,45 @@ function Navbar() {
               </li>
               <li className="mb-1">
                 <button
+                  className="flex"
                   onClick={() =>
-                    i18n.changeLanguage(i18n?.language === "fr" ? "en" : "fr")
+                    i18n.changeLanguage(
+                      i18n?.language === "en"
+                        ? "fr"
+                        : i18n?.language === "fr"
+                        ? "ar"
+                        : "en"
+                    )
                   }
                 >
-                  {i18n?.language === "fr" ? (
-                    <div className="flex items-center gap-2 font-semibold text-base">
-                      <img src="/svg/en.svg" height={25} width={25} alt="" />
+                  {i18n?.language === "en" ? (
+                    <div className="flex items-center gap-2 font-semibold text-base text-gray-700">
+                      <Image
+                        src="/svg/fr.svg"
+                        height={25}
+                        width={25}
+                        alt="English Flag"
+                      />
+                      <p>{t("language")}</p>
+                    </div>
+                  ) : i18n?.language === "fr" ? (
+                    <div className="flex items-center gap-2 font-semibold text-base text-gray-700">
+                      <Image
+                        src="/svg/en.svg"
+                        height={25}
+                        width={25}
+                        alt="French Flag"
+                      />
                       <p>{t("language")}</p>
                     </div>
                   ) : (
-                    <div className="flex items-center gap-2 font-semibold text-base">
-                      <img src="/svg/fr.svg" height={25} width={25} alt="" />
+                    <div className="flex items-center gap-2 font-semibold text-base text-gray-700">
+                      <Image
+                        src="/svg/ar.svg"
+                        height={25}
+                        width={25}
+                        alt="Arabic Flag"
+                      />
                       <p>{t("language")}</p>
                     </div>
                   )}

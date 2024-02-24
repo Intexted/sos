@@ -5,7 +5,7 @@ import LanguageDetector from "i18next-browser-languagedetector";
 const resources = {
   en: { translation: { language: "Français" } },
   fr: { translation: { language: "English" } },
-  ar: { translation: {} },
+  ar: { translation: { language: "العربية" } },
 };
 
 const init_i18 = ({ resources }) => {
