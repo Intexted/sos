@@ -50,7 +50,7 @@ function Language() {
                   ? "/svg/fr.svg"
                   : i18n?.language === "en"
                   ? "/svg/en.svg"
-                  : "/ar.png"
+                  : "/ar.svg"
               }
               alt="flag"
             />
@@ -97,7 +97,7 @@ function Language() {
                 change_lang("ar");
               }}
             >
-              <Image height={26} width={26} src="/ar.png" alt="morocco flag" />
+              <Image height={26} width={26} src="/ar.svg" alt="morocco flag" />
               <span>العربية</span>
             </a>
           </div>

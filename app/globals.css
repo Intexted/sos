@@ -13,6 +13,7 @@
 
 .rtl {
   direction: rtl;
+  font-family: var(--ar-font), sans-serif !important;
 }
 
 .ltr {

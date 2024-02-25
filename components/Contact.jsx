@@ -2,7 +2,7 @@ import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
 
 function Contact() {
   return (
-    <div className="flex flex-col md:flex-row md:items-center justify-between gap-5 pl-16 md:px-20 w-full bg-[#15213C] py-5 text-neutral-content border-b-2 border-gray-800 ">
+    <div className="flex flex-col md:flex-row md:items-center justify-between gap-5 pl-16 md:px-20 w-full bg-[rgb(2,33,75)] py-5 text-neutral-content border-b-2 border-gray-800 ">
       <span className="flex items-center gap-3 mb-1 ">
         <FaEnvelope size={35} />
         <h4 className="text-center  font-semibold">

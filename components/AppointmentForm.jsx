@@ -3,8 +3,10 @@ import Image from "next/image";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
+import { useTranslation } from "react-i18next";
 
 const AppointmentForm = () => {
+  const { t } = useTranslation();
   const [loading, setLoading] = useState(false);
   const {
     register,
@@ -50,8 +52,8 @@ const AppointmentForm = () => {
 
   return (
     <div className="flex flex-col md:flex-row justify-between items-start w-full py-16">
-      <div className="md:w-1/2 text-center md:text-left">
-        <h2 className="font-semibold text-3xl mb-5">Prenez Un Rendez-Vous</h2>
+      <div className="md:w-1/2 text-center ">
+        <h2 className="font-semibold text-3xl mb-5">{t("Appointment")}</h2>
         <form className="w-full px-5" onSubmit={handleSubmit(onSubmit)}>
           <div className="flex gap-5 mb-5">
             <label className="form-control w-full">
@@ -116,7 +118,7 @@ const AppointmentForm = () => {
           </label>
           <button
             type="submit"
-            className="btn bg-[#F19C1A] hover:text-black text-white mt-5 font-semibold w-full"
+            className="btn bg-[#1c2c50] hover:text-black text-white mt-5 font-semibold w-full"
           >
             {!loading ? "Envoyer" : "Loading..."}
           </button>

@@ -60,7 +60,7 @@ function Navbar() {
         <ul className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto  lg:items-center lg:w-auto lg:space-x-6">
           <li>
             <Link className="text-sm text-[#15213C] font-bold " href="/">
-              Accueil
+              {t("accueil")}
             </Link>
           </li>
           <li className="text-gray-300">
@@ -84,7 +84,7 @@ function Navbar() {
               className="text-sm cursor-pointer text-gray-400 hover:text-[#15213C]"
               onClick={() => scrollTo("about")}
             >
-              About
+              {t("About")}
             </h3>
           </li>
           <li className="text-gray-300">
@@ -108,7 +108,7 @@ function Navbar() {
               className="text-sm cursor-pointer text-gray-400 hover:text-[#15213C]"
               onClick={() => scrollTo("service")}
             >
-              Nos Services
+              {t("Services")}
             </h3>
           </li>
 
@@ -133,7 +133,7 @@ function Navbar() {
               className="text-sm cursor-pointer text-gray-400 hover:text-[#15213C]"
               onClick={() => scrollTo("contact")}
             >
-              Contact
+              {t("Contact")}
             </h3>
           </li>
         </ul>
@@ -184,7 +184,7 @@ function Navbar() {
                   className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
                   href="/"
                 >
-                  Accueil
+                  {t("accueil")}
                 </a>
               </li>
               <li className="mb-1">
@@ -192,7 +192,7 @@ function Navbar() {
                   className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
                   onClick={() => scrollTo("about")}
                 >
-                  About
+                  {t("About")}
                 </h3>
               </li>
               <li className="mb-1">
@@ -200,7 +200,7 @@ function Navbar() {
                   className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
                   onClick={() => scrollTo("service")}
                 >
-                  Nos Services
+                  {t("Services")}
                 </h3>
               </li>
               <li className="mb-20">
@@ -208,7 +208,7 @@ function Navbar() {
                   className="block  p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
                   onClick={() => scrollTo("contact")}
                 >
-                  Contact
+                  {t("Contact")}
                 </h3>
               </li>
               <li className="mb-1">
