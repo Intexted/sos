@@ -94,5 +94,15 @@ const init_i18 = ({ resources }) => {
 
 init_i18({ resources });
 
+const change_lang = () => {
+  let lng = i18n.language.split("-")[0].toLowerCase();
+
+  if (lng === "en" || lng === "fr" || lng === "ar") i18n.changeLanguage(lng);
+  else {
+    i18n.changeLanguage("fr");
+  }
+};
+change_lang();
+
 export { init_i18 };
 export default i18n;
