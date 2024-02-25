@@ -145,7 +145,7 @@ export default function Home() {
       <h2 className="font-semibold text-3xl mb-5 capitalize">
         ce que nos clients disent de nous
       </h2>
-      <div className="flex flex-wrap gap-3 pb-5">
+      <div className="flex flex-wrap gap-3 pb-5 ">
         {reviews.map((item) => (
           <div
             key={item.name}
