@@ -124,8 +124,12 @@ init_i18({ resources });
 const change_lang = () => {
   let lng = i18n.language.split("-")[0].toLowerCase();
 
-  if (lng === "en" || lng === "fr" || lng === "ar") i18n.changeLanguage(lng);
-  else {
+  if (lng === "en" || lng === "fr" || lng === "ar") {
+    i18n.changeLanguage(lng);
+    if (i18n?.language === "ar") {
+      document.body.classList.add("rtl");
+    }
+  } else {
     i18n.changeLanguage("fr");
   }
 };
