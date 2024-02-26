@@ -1,10 +1,11 @@
+import Image from "next/image";
+import dynamic from "next/dynamic";
 import AboutSection from "@/components/AboutSection";
 import AppointmentForm from "@/components/AppointmentForm";
-import HeroSection from "@/components/HeroSection";
 import LocationSection from "@/components/LocationSection";
 import ServiceSection from "@/components/ServiceSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
-import Image from "next/image";
+const HeroSection = dynamic(() => import("@/components/HeroSection"));
 
 export default function Home() {
   return (

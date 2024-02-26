@@ -21,7 +21,7 @@ export const metadata = {
     canonical: "/",
   },
   title:
-    "Service d'Ambulance et Urgence Médicale à Domicile 24/7 au Maroc avec Médecins Qualifiés",
+    "Ambulance et Urgence Médicale à Domicile 24/7 au Maroc avec Médecins Qualifiés",
   description:
     "Bénéficiez de services médicaux d'urgence à domicile 24/7 au Maroc. Nos médecins qualifiés offrent des consultations rapides et efficaces. En cas de besoin de transport médicalisé, notre service d'ambulance est prêt à intervenir. Contactez-nous dès maintenant pour une assistance médicale rapide et fiable.",
   keywords: [
@@ -40,6 +40,7 @@ export const metadata = {
       "Bénéficiez de services médicaux d'urgence à domicile 24/7 au Maroc. Nos médecins qualifiés offrent des consultations rapides et efficaces. En cas de besoin de transport médicalisé, notre service d'ambulance est prêt à intervenir. Contactez-nous dès maintenant pour une assistance médicale rapide et fiable.",
     url: "https://www.ambulancerabat.com/",
     images: "/opengraph-image.png",
+    type: "website",
   },
 };
 
