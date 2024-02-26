@@ -9,8 +9,10 @@ const resources = {
       discover:
         "Discover our emergency medical services at home! Our qualified doctors are available 24/7 for quick and efficient consultations. Receive quality care at your doorstep, whether it's for a medical emergency or a simple consultation. Our ambulance service is also ready for medical transportation. Contact us now for fast and reliable medical assistance!",
       callUsNow: "Call us now",
+      callUs: "Call us",
       sos: "SOS AMBULANCES : RABAT - SALE - TEMARA - KENITRA",
       Au: "At the",
+      email: "Email",
       accueil: "Home",
       About: "About us",
       Services: "Our Services",
@@ -37,8 +39,10 @@ const resources = {
       discover:
         "Explorez nos services médicaux d'urgence à domicile ! Nos médecins qualifiés sont disponibles 24/7 pour des consultations rapides et efficaces. Bénéficiez de soins de qualité chez vous, que ce soit pour une urgence médicale ou une simple consultation. Notre service d'ambulance est également prêt pour des transports médicalisés. Contactez-nous dès maintenant pour une assistance médicale rapide et fiable !",
       callUsNow: "Appelez-nous maintenant",
+      callUs: "Appelez-nous",
       sos: "SOS AMBULANCES : RABAT - SALÉ - TÉMARA - KENITRA",
       Au: "Au",
+      email: "Email",
       accueil: "Accueil",
       About: "A Propos De Nous",
       Services: "Nos Services",
@@ -65,8 +69,11 @@ const resources = {
       discover:
         "اكتشف خدماتنا الطبية الطارئة في المنزل! أطباؤنا المؤهلون متاحون على مدار الساعة طوال أيام الأسبوع للمشاورات السريعة والفعّالة. احصل على رعاية ذات جودة عندك في المنزل، سواء كان الأمر بحاجة إلى طوارئ طبية أو استشارة بسيطة. خدمة الإسعاف لدينا جاهزة أيضًا للنقل الطبي. اتصل بنا الآن للحصول على مساعدة طبية سريعة وموثوقة!",
       callUsNow: "اتصل بنا الآن",
+      callUs: "اتصل بنا",
+
       sos: "سيارات الإسعاف : الرباط - السلا - تمارة - القنيطرة",
       Au: "في",
+      email: "البريد الإلكتروني",
       accueil: "الرئيسية",
       About: "من نحن",
       Services: "خدماتنا",
