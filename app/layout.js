@@ -17,19 +17,28 @@ const tajawal = Tajawal({
 
 export const metadata = {
   metadataBase: new URL("https://www.ambulancerabat.com/"),
+  alternates: {
+    canonical: "/",
+  },
   title:
-    "Urgence Médicale à Domicile au Maroc: Consultation 24/7 avec Médecins Qualifiés et Service d'Ambulance",
+    "Service d'Ambulance et Urgence Médicale à Domicile 24/7 au Maroc avec Médecins Qualifiés",
   description:
-    "Offrant des services médicaux d'urgence à domicile au Maroc, notre équipe de médecins qualifiés est disponible 24h/24 et 7j/7 pour des consultations rapides et efficaces. Que ce soit pour une urgence médicale ou une simple consultation, nous vous apportons des soins de qualité dans le confort de votre foyer. De plus, notre service d'ambulance est prêt à intervenir pour des transports médicalisés en cas de besoin. Contactez-nous dès maintenant pour une assistance médicale rapide et fiable, sans attendre.",
+    "Bénéficiez de services médicaux d'urgence à domicile 24/7 au Maroc. Nos médecins qualifiés offrent des consultations rapides et efficaces. En cas de besoin de transport médicalisé, notre service d'ambulance est prêt à intervenir. Contactez-nous dès maintenant pour une assistance médicale rapide et fiable.",
   keywords: [
     "Médecin à Domicile Rabat",
     "Urgence Médicale Rabat",
     "Consultation à Domicile Rabat",
-    "Urgence Médicale Rabat",
     "Soins d'Urgence en Ambulance Rabat",
     "Ambulance d'Urgence Rabat",
+    "Service Médical à Domicile Rabat",
   ],
+
   openGraph: {
+    title:
+      "Service d'Ambulance et Urgence Médicale à Domicile 24/7 au Maroc avec Médecins Qualifiés",
+    description:
+      "Bénéficiez de services médicaux d'urgence à domicile 24/7 au Maroc. Nos médecins qualifiés offrent des consultations rapides et efficaces. En cas de besoin de transport médicalisé, notre service d'ambulance est prêt à intervenir. Contactez-nous dès maintenant pour une assistance médicale rapide et fiable.",
+    url: "https://www.ambulancerabat.com/",
     images: "/opengraph-image.png",
   },
 };

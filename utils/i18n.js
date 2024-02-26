@@ -7,7 +7,7 @@ const resources = {
     translation: {
       language: "English",
       discover:
-        "Discover our emergency medical services at home! Our qualified doctors are available 24/7 for quick and effective consultations. Receive quality care at your doorstep, whether it's for a medical emergency or a routine consultation. Our ambulance service is also ready for medical transportation. Contact us now for fast and reliable medical assistance!",
+        "Discover our emergency medical services at home! Our qualified doctors are available 24/7 for quick and efficient consultations. Receive quality care at your doorstep, whether it's for a medical emergency or a simple consultation. Our ambulance service is also ready for medical transportation. Contact us now for fast and reliable medical assistance!",
       callUsNow: "Call us now",
       sos: "SOS AMBULANCES : RABAT - SALE - TEMARA - KENITRA",
       Au: "At the",
@@ -19,14 +19,23 @@ const resources = {
       testimonial: "What Our Clients Say About Us",
       location: "Our Location",
       aboutP:
-        "We offer a complete range of medical services, including medical emergencies, home care, and hospitalizations. With our team of dedicated professionals, we guarantee personalized and quality care wherever you are. Our ambulances are equipped to quickly respond to any emergency, and we also offer home hospitalizations for continuous medical follow-up in the comfort of your home. Your health and well-being are our top priority. Contact us today to learn more and schedule your next medical consultation.",
+        "We offer a comprehensive range of medical services, including medical emergencies, home care, and hospitalizations. With our team of dedicated professionals, we guarantee personalized and quality care wherever you are. Our ambulances are equipped to respond quickly to any emergency, and we also provide home hospitalizations for continuous medical monitoring in the comfort of your home. Your health and well-being are our top priority. Contact us today to learn more and schedule your next medical consultation.",
+      "service1 title": "Emergency Medicine",
+      "service2 title": "Home Hospitalization",
+      "service3 title": "Equipped Ambulance",
+      "service1 content":
+        "SOS Urgency is equipped with a competent team of emergency physicians ensuring continuous care.",
+      "service2 content":
+        "SOS Urgency offers home hospitalization services, allowing patients to recover at home surrounded by their loved ones.",
+      "service3 content":
+        "SOS Urgency provides you with medical transportation equipped to accompany you under the best conditions.",
     },
   },
   fr: {
     translation: {
       language: "Français",
       discover:
-        "Découvrez nos services médicaux d'urgence à domicile ! Nos médecins qualifiés sont disponibles 24/7 pour des consultations rapides et efficaces. Recevez des soins de qualité chez vous, que ce soit pour une urgence médicale ou une simple consultation. Notre service d'ambulance est également prêt pour des transports médicalisés. Contactez-nous dès maintenant pour une assistance médicale rapide et fiable !",
+        "Explorez nos services médicaux d'urgence à domicile ! Nos médecins qualifiés sont disponibles 24/7 pour des consultations rapides et efficaces. Bénéficiez de soins de qualité chez vous, que ce soit pour une urgence médicale ou une simple consultation. Notre service d'ambulance est également prêt pour des transports médicalisés. Contactez-nous dès maintenant pour une assistance médicale rapide et fiable !",
       callUsNow: "Appelez-nous maintenant",
       sos: "SOS AMBULANCES : RABAT - SALÉ - TÉMARA - KENITRA",
       Au: "Au",
@@ -39,13 +48,22 @@ const resources = {
       location: "Notre Localisation",
       aboutP:
         "Nous offrons une gamme complète de services médicaux, y compris des urgences médicales, des soins à domicile et des hospitalisations. Avec notre équipe de professionnels dévoués, nous vous garantissons des soins personnalisés et de qualité où que vous soyez. Nos ambulances sont équipées pour répondre rapidement à toute urgence, et nous proposons également des hospitalisations à domicile pour un suivi médical continu dans le confort de votre foyer. Votre santé et votre bien-être sont notre priorité absolue. Contactez-nous dès aujourd'hui pour en savoir plus et planifier votre prochaine consultation médicale.",
+      "service1 title": "Médecine d’Urgence",
+      "service2 title": "Hospitalisation à Domicile",
+      "service3 title": "Ambulance Equipée",
+      "service1 content":
+        "SOS Urgence bénéficie d’une équipe d’urgentistes compétente assurant une permanence des soins.",
+      "service2 content":
+        "SOS Urgence offre des services d'hospitalisation à domicile, permettant aux patients de récupérer chez eux entourés de leurs proches.",
+      "service3 content":
+        "SOS Urgence met à votre disposition un transport médicalisé pour être accompagné dans les meilleures conditions.",
     },
   },
   ar: {
     translation: {
       language: "العربية",
       discover:
-        "اكتشف خدماتنا الطبية الطارئة في المنزل! أطباؤنا المؤهلون متاحون على مدار الساعة للاستشارات السريعة والفعّالة. تلقى رعاية عالية الجودة في منزلك، سواء كان ذلك لحالة طبية طارئة أو استشارة عادية. خدمتنا للإسعاف جاهزة أيضًا للنقل الطبي. اتصل بنا الآن للحصول على مساعدة طبية سريعة وموثوقة!",
+        "اكتشف خدماتنا الطبية الطارئة في المنزل! أطباؤنا المؤهلون متاحون على مدار الساعة طوال أيام الأسبوع للمشاورات السريعة والفعّالة. احصل على رعاية ذات جودة عندك في المنزل، سواء كان الأمر بحاجة إلى طوارئ طبية أو استشارة بسيطة. خدمة الإسعاف لدينا جاهزة أيضًا للنقل الطبي. اتصل بنا الآن للحصول على مساعدة طبية سريعة وموثوقة!",
       callUsNow: "اتصل بنا الآن",
       sos: "سيارات الإسعاف : الرباط - السلا - تمارة - القنيطرة",
       Au: "في",
@@ -57,7 +75,16 @@ const resources = {
       testimonial: "ما يقوله عملاؤنا عنا",
       location: "موقعنا",
       aboutP:
-        "نحن نقدم مجموعة كاملة من الخدمات الطبية بما في ذلك الطوارئ الطبية والرعاية المنزلية والإستشفاء. مع فريقنا من المحترفين الملتزمين، نضمن لك رعاية مخصصة وذات جودة أينما كنت. تم تجهيز سيارات الإسعاف الخاصة بنا للرد بسرعة على أي طارئة، ونقدم أيضًا الإستشفاء في المنزل للمتابعة الطبية المستمرة في راحة منزلك. صحتك ورفاهيتك هي أولويتنا القصوى. اتصل بنا اليوم لمعرفة المزيد وترتيب موعد لاستشارتك الطبية القادمة.",
+        "نقدم مجموعة شاملة من الخدمات الطبية، بما في ذلك الطوارئ الطبية، والرعاية المنزلية، والإقامات في المستشفى. مع فريقنا من المحترفين المتفانين، نضمن لك رعاية شخصية وجودة في أي مكان تكون فيه. تم تجهيز سيارات الإسعاف الخاصة بنا للرد بسرعة على أي طوارئ، ونقدم أيضًا الإقامات في المستشفى المنزلية للمتابعة الطبية المستمرة في راحة منزلك. صحتك ورفاهيتك هي أولويتنا القصوى. اتصل بنا اليوم لمعرفة المزيد وترتيب موعد لاستشارتك الطبية القادمة.",
+      "service1 title": "طب الطوارئ",
+      "service2 title": "الإستشفاء في المنزل",
+      "service3 title": "سيارة إسعاف مجهزة",
+      "service1 content":
+        "SOS الطوارئ مجهزة بفريق متميز من أطباء الطوارئ يضمن توفير رعاية مستمرة.",
+      "service2 content":
+        "تقدم SOS الطوارئ خدمات الإقامة في المنزل، مما يتيح للمرضى الانتعاش في المنزل ومحاطين بأحبائهم.",
+      "service3 content":
+        "SOS الطوارئ توفر لك خدمة نقل طبي مجهزة لضمان مرافقتك في أفضل الظروف.",
     },
   },
 };

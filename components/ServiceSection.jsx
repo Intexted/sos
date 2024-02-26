@@ -6,22 +6,19 @@ const ServiceSection = () => {
   const { t } = useTranslation();
   const services = [
     {
-      title: "Médecine d’Urgence",
+      title: t("service1 title"),
       image: "doctor.svg",
-      description:
-        " SOS Urgence est dotée d’une équipe d’urgentistes compétente qui assure une permanence de soins.",
+      description: t("service1 content"),
     },
     {
-      title: "Hospitalisation à Domicile",
+      title: t("service2 title"),
       image: "home.svg",
-      description:
-        "SOS Urgence propose l’hospitalisation à domicile pour se rétablirchez soi entouré de ses proches.",
+      description: t("service2 content"),
     },
     {
-      title: "Ambulance Equipée",
+      title: t("service3 title"),
       image: "ambulance.svg",
-      description:
-        "SOS Urgence met à votre disposition un transport médicalisé pour être accompagné dans les meilleures conditions.",
+      description: t("service3 content"),
     },
   ];
   return (
