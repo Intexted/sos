@@ -31,6 +31,10 @@ export const metadata = {
     "Soins d'Urgence en Ambulance Rabat",
     "Ambulance d'Urgence Rabat",
     "Service Médical à Domicile Rabat",
+    "ambulance rabat",
+    "ambulance maroc",
+    "ambulance urgence",
+    "ambulance privée",
   ],
 
   openGraph: {

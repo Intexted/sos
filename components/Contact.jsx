@@ -16,14 +16,15 @@ function Contact() {
       </span>
       <a href="tel:+212647478911" className="flex items-center gap-3 mb-1 ">
         <FaPhoneAlt size={35} />
-        <h4 className="text-center underline font-semibold cursor-pointer">
+        <h4 className="text-center underline font-semibold cursor-pointer ltr">
           {t("callUs")} <br className="hidden md:flex" /> +212 654-845780
         </h4>
       </a>
       <span className="flex items-center gap-3 ">
         <FaMapMarkerAlt size={35} />
         <h4 className="text-center  font-semibold">
-          Addresse <br className="hidden md:flex" /> addresse example
+          Addresse <br className="hidden md:flex" /> 26GV+PP6, Av. Zarbia, Salé
+          11000
         </h4>
       </span>
     </div>
