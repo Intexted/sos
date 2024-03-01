@@ -36,7 +36,7 @@ const HeroSection = () => {
             {t("discover")}
           </p>
           <a
-            href="tel:+212647478911"
+            href="tel:+212611130509"
             className="btn bg-[#1c2c50] w-full md:w-1/3 font-semibold text-white hover:text-black"
           >
             <FaPhoneAlt /> {t("callUsNow")}
