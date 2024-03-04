@@ -14,7 +14,7 @@ function Contact() {
           sosambulancerabat@gmail.com
         </h4>
       </span>
-      <a href="tel:+212611130509" className="flex items-center gap-3 mb-1 ">
+      <a href="tel:+212654845780" className="flex items-center gap-3 mb-1 ">
         <FaPhoneAlt size={35} />
         <h4 className="text-center underline font-semibold cursor-pointer ltr">
           {t("callUs")} <br className="hidden md:flex" /> +212 611-130509

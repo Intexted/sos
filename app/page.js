@@ -42,7 +42,7 @@ export default function Home() {
       </a>
       {/* Phone Icon */}
       <a
-        href="tel:+212611130509"
+        href="tel:+212654845780"
         style={{
           position: "fixed",
           bottom: 10,
