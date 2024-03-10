@@ -21,16 +21,22 @@ const resources = {
       testimonial: "What Our Clients Say About Us",
       location: "Our Location",
       aboutP:
-        "We offer a comprehensive range of medical services, including medical emergencies, home care, and hospitalizations. With our team of dedicated professionals, we guarantee personalized and quality care wherever you are. Our ambulances are equipped to respond quickly to any emergency, and we also provide home hospitalizations for continuous medical monitoring in the comfort of your home. Your health and well-being are our top priority. Contact us today to learn more and schedule your next medical consultation.",
+        "SOS Ambulance Rabat offer a comprehensive range of medical services, including medical emergencies, home care, and hospitalizations. With our team of dedicated professionals, we guarantee personalized and quality care wherever you are. Our ambulances are equipped to respond quickly to any emergency, and we also provide home hospitalizations for continuous medical monitoring in the comfort of your home. Your health and well-being are our top priority. Contact us today to learn more and schedule your next medical consultation.",
       "service1 title": "Emergency Medicine",
       "service2 title": "Home Hospitalization",
       "service3 title": "Equipped Ambulance",
+      "service4 title": "Sports Events Assistance",
+      "service5 title": "Assistance constructing  building",
       "service1 content":
-        "SOS Urgency is equipped with a competent team of emergency physicians ensuring continuous care.",
+        "SOS Ambulance Rabat is equipped with a competent team of emergency physicians ensuring continuous care.",
       "service2 content":
-        "SOS Urgency offers home hospitalization services, allowing patients to recover at home surrounded by their loved ones.",
+        "SOS Ambulance Rabat offers home hospitalization services, allowing patients to recover at home surrounded by their loved ones.",
       "service3 content":
-        "SOS Urgency provides you with medical transportation equipped to accompany you under the best conditions.",
+        "SOS Ambulance Rabat provides you with medical transportation equipped to accompany you under the best conditions.",
+      "service4 content":
+        "SOS Ambulance Rabat ensures safety at every sports event. With our responsive and experienced team, we guarantee swift emergency responses, providing total peace of mind to participants and spectators.",
+      "service5 content":
+        "SOS Ambulance Rabat ensures safety and medical support throughout the construction process. With a skilled team and rapid response capabilities we provide immediate care in case of accidents or emergencies.",
     },
   },
   fr: {
@@ -51,16 +57,22 @@ const resources = {
       testimonial: "Ce Que Nos Clients Disent De Nous",
       location: "Notre Localisation",
       aboutP:
-        "Nous offrons une gamme complète de services médicaux, y compris des urgences médicales, des soins à domicile et des hospitalisations. Avec notre équipe de professionnels dévoués, nous vous garantissons des soins personnalisés et de qualité où que vous soyez. Nos ambulances sont équipées pour répondre rapidement à toute urgence, et nous proposons également des hospitalisations à domicile pour un suivi médical continu dans le confort de votre foyer. Votre santé et votre bien-être sont notre priorité absolue. Contactez-nous dès aujourd'hui pour en savoir plus et planifier votre prochaine consultation médicale.",
+        "SOS Ambulance Rabat offre une gamme complète de services médicaux, y compris des urgences médicales, des soins à domicile et des hospitalisations. Avec notre équipe de professionnels dévoués, nous vous garantissons des soins personnalisés et de qualité où que vous soyez. Nos ambulances sont équipées pour répondre rapidement à toute urgence, et nous proposons également des hospitalisations à domicile pour un suivi médical continu dans le confort de votre foyer. Votre santé et votre bien-être sont notre priorité absolue. Contactez-nous dès aujourd'hui pour en savoir plus et planifier votre prochaine consultation médicale.",
       "service1 title": "Médecine d’Urgence",
       "service2 title": "Hospitalisation à Domicile",
       "service3 title": "Ambulance Equipée",
+      "service4 title": "Assistance Ambulance aux événements sportifs",
+      "service5 title": "Assistance Ambulance à la construction d'immeuble",
       "service1 content":
-        "SOS Urgence bénéficie d’une équipe d’urgentistes compétente assurant une permanence des soins.",
+        "SOS Ambulance Rabat bénéficie d’une équipe d’urgentistes compétente assurant une permanence des soins.",
       "service2 content":
-        "SOS Urgence offre des services d'hospitalisation à domicile, permettant aux patients de récupérer chez eux entourés de leurs proches.",
+        "SOS Ambulance Rabat offre des services d'hospitalisation à domicile, permettant aux patients de récupérer chez eux entourés de leurs proches.",
       "service3 content":
-        "SOS Urgence met à votre disposition un transport médicalisé pour être accompagné dans les meilleures conditions.",
+        "SOS Ambulance Rabat met à votre disposition un transport médicalisé pour être accompagné dans les meilleures conditions.",
+      "service4 content":
+        "SOS Ambulance Rabat  assure la sécurité lors de chaque compétition sportive. Réactifs et expérimentés, nous garantissons des interventions rapides en cas d'urgence.",
+      "service5 content":
+        "SOS Ambulance Rabat  assure la sécurité et le soutien médical tout au long du processus de construction. Avec une équipe qualifiée et des capacités de réponse rapide en cas d'accidents ou d'urgences.",
     },
   },
   ar: {
@@ -86,12 +98,18 @@ const resources = {
       "service1 title": "طب الطوارئ",
       "service2 title": "الإستشفاء في المنزل",
       "service3 title": "سيارة إسعاف مجهزة",
+      "service4 title": "مساندة في الحدث الرياضي",
+      "service5 title": "مساندة في بناء مبنى",
       "service1 content":
         "SOS الطوارئ مجهزة بفريق متميز من أطباء الطوارئ يضمن توفير رعاية مستمرة.",
       "service2 content":
         "تقدم SOS الطوارئ خدمات الإقامة في المنزل، مما يتيح للمرضى الانتعاش في المنزل ومحاطين بأحبائهم.",
       "service3 content":
         "SOS الطوارئ توفر لك خدمة نقل طبي مجهزة لضمان مرافقتك في أفضل الظروف.",
+      "service4 content":
+        "SOS Ambulance Rabat  يضمن الأمان في كل فعالية رياضية. بفريقنا المتجاوب وذو الخبرة، نضمن استجابات سريعة في حالات الطوارئ  ",
+      "service5 content":
+        "SOS Ambulance Rabat يضمن السلامة والدعم الطبي طوال عملية البناء. مع فريق ماهر وقدرات الاستجابة السريعةنقدم الرعاية الفورية في حالات الحوادث أو الطوارئ",
     },
   },
 };

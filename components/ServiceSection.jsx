@@ -20,15 +20,28 @@ const ServiceSection = () => {
       image: "ambulance.svg",
       description: t("service3 content"),
     },
+    {
+      title: t("service4 title"),
+      image: "sport.svg",
+      description: t("service4 content"),
+    },
+    {
+      title: t("service5 title"),
+      image: "building.svg",
+      description: t("service5 content"),
+    },
   ];
   return (
     <div id="service" className="text-center ">
       <h2 className="font-semibold  text-3xl">{t("Services")}</h2>
-      <div className="w-full flex flex-col md:flex-row gap-3 items-center mt-5 mb-10">
+      <div
+        className="w-full grid grid-cols-1
+    md:grid-cols-3 gap-5 items-stretch mt-5 mb-10"
+      >
         {services.map((item, index) => (
           <div
             key={index}
-            className="w-full border-2 rounded-md shadow-sm px-2 py-5 gap-5 md:w-1/3 flex flex-col md:gap-2 items-center justify-center"
+            className="w-full border-2 rounded-md shadow-sm px-2 py-5 gap-5 hover:scale-105 flex flex-col md:gap-2 items-center justify-center"
           >
             <Image src={`/${item.image}`} width={140} height={170} alt="" />
             <h3 className="text-2xl font-semibold">{item.title}</h3>

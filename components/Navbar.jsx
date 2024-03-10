@@ -81,7 +81,7 @@ function Navbar() {
           </li>
           <li>
             <h3
-              className="text-sm cursor-pointer text-gray-400 hover:text-[#15213C]"
+              className="text-sm cursor-pointer text-gray-500 hover:text-[#15213C] hover:scale-105"
               onClick={() => scrollTo("about")}
             >
               {t("About")}
@@ -105,7 +105,7 @@ function Navbar() {
           </li>
           <li>
             <h3
-              className="text-sm cursor-pointer text-gray-400 hover:text-[#15213C]"
+              className="text-sm cursor-pointer text-gray-500 hover:text-[#15213C] hover:scale-105"
               onClick={() => scrollTo("service")}
             >
               {t("Services")}
@@ -130,7 +130,7 @@ function Navbar() {
           </li>
           <li>
             <h3
-              className="text-sm cursor-pointer text-gray-400 hover:text-[#15213C]"
+              className="text-sm cursor-pointer text-gray-500 hover:text-[#15213C] hover:scale-105"
               onClick={() => scrollTo("contact")}
             >
               {t("Contact")}
