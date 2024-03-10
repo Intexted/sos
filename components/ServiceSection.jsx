@@ -22,7 +22,7 @@ const ServiceSection = () => {
     },
     {
       title: t("service4 title"),
-      image: "sport.svg",
+      image: "sportpic.jpeg",
       description: t("service4 content"),
     },
     {
