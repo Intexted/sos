@@ -5,6 +5,7 @@ import AppointmentForm from "@/components/AppointmentForm";
 import LocationSection from "@/components/LocationSection";
 import ServiceSection from "@/components/ServiceSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
+import { FaPhone, FaPhoneAlt } from "react-icons/fa";
 const HeroSection = dynamic(() => import("@/components/HeroSection"));
 
 export default function Home() {
@@ -54,13 +55,9 @@ export default function Home() {
           boxShadow: "rgba(0, 0, 0, 0.133) 0px 10px 40px",
         }}
       >
-        <Image
-          src="/phone.svg"
-          alt="phone logo"
-          height={50}
-          width={50}
-          className="cursor-pointer"
-        />
+        <span className="cursor-pointer phone">
+          <FaPhoneAlt />
+        </span>
       </a>
     </main>
   );

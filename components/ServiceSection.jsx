@@ -30,6 +30,11 @@ const ServiceSection = () => {
       image: "building.svg",
       description: t("service5 content"),
     },
+    {
+      title: t("service6 title"),
+      image: "airplane.svg",
+      description: "",
+    },
   ];
   return (
     <div id="service" className="text-center ">

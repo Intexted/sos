@@ -27,6 +27,8 @@ const resources = {
       "service3 title": "Equipped Ambulance",
       "service4 title": "Sports Events Assistance",
       "service5 title": "Ambulance assistance for large construction sites",
+      "service6 title": "Ambulance Service at Airports",
+
       "service1 content":
         "SOS Ambulance Rabat is equipped with a competent team of emergency physicians ensuring continuous care.",
       "service2 content":
@@ -63,6 +65,7 @@ const resources = {
       "service3 title": "Ambulance Equipée",
       "service4 title": "Assistance Ambulance aux événements sportifs",
       "service5 title": "Assistance Ambulancière pour les grands chantiers",
+      "service6 title": "Service d'ambulance dans les aéroports",
       "service1 content":
         "SOS Ambulance Rabat bénéficie d’une équipe d’urgentistes compétente assurant une permanence des soins.",
       "service2 content":
@@ -100,6 +103,7 @@ const resources = {
       "service3 title": "سيارة إسعاف مجهزة",
       "service4 title": "مساندة في الحدث الرياضي",
       "service5 title": "خدمة الإسعاف للمشاريع الكبيرة",
+      "service6 title": "خدمة الإسعاف في المطارات الدولية",
       "service1 content":
         "SOS الطوارئ مجهزة بفريق متميز من أطباء الطوارئ يضمن توفير رعاية مستمرة.",
       "service2 content":

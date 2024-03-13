@@ -83,3 +83,34 @@
 ::-webkit-scrollbar {
   display: none;
 }
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0px #4444ee00, 0 0 0 0px #2ea7a685, 0 0 0 0px #4444ee00,
+      0 0 0 0px #2ea7a685, 0 0 0 0px #4444ee00, 0 0 0 0px #2ea7a685,
+      0 0 0 0px #4444ee00, 0 0 0 0px #2ea7a685;
+  }
+  100% {
+    box-shadow: 0 0 0 15px #4444ee00, 0 0 0 17px rgba(255, 255, 255, 0),
+      0 0 0 40px #4444ee00, 0 0 0 42px rgba(255, 255, 255, 0),
+      0 0 0 70px #4444ee00, 0 0 0 72px rgba(255, 255, 255, 0),
+      0 0 0 105px #4444ee00, 0 0 0 107px rgba(255, 255, 255, 0);
+  }
+}
+
+.phone {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background: #2ea7a6;
+  animation: ripple 1.5s infinite;
+  position: absolute;
+  bottom: 10%;
+  right: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.5em;
+}
