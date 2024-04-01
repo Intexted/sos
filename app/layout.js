@@ -20,7 +20,7 @@ export const metadata = {
   alternates: {
     canonical: "/",
   },
-  title: "SOS AMBULANCE Rabat | Appelez-nous au 0654 84 57 80",
+  title: "SOS AMBULANCE Rabat | Appelez-nous au 0611 13 05 09",
   description:
     "Bénéficiez de services médicaux d'urgence à domicile 24/7 au Maroc. Nos médecins qualifiés offrent des consultations rapides et efficaces. En cas de besoin de transport médicalisé, notre service d'ambulance est prêt à intervenir. Contactez-nous dès maintenant pour une assistance médicale rapide et fiable.",
   keywords: [
@@ -37,8 +37,7 @@ export const metadata = {
   ],
 
   openGraph: {
-    title:
-      "Service d'Ambulance et Urgence Médicale à Domicile 24/7 au Maroc avec Médecins Qualifiés",
+    title: "SOS AMBULANCE Rabat | Appelez-nous au 0611 13 05 09",
     description:
       "Bénéficiez de services médicaux d'urgence à domicile 24/7 au Maroc. Nos médecins qualifiés offrent des consultations rapides et efficaces. En cas de besoin de transport médicalisé, notre service d'ambulance est prêt à intervenir. Contactez-nous dès maintenant pour une assistance médicale rapide et fiable.",
     url: "https://www.ambulancerabat.com/",

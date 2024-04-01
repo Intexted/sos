@@ -18,7 +18,7 @@ function Contact() {
         <FaPhoneAlt size={35} />
         <h4 className="text-center underline font-semibold cursor-pointer ltr">
           {t("callUs")} <br className="hidden md:flex" />
-          +212 654-845780
+          +212 611-130509
         </h4>
       </a>
       <span className="flex items-center gap-5 ">

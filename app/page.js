@@ -19,7 +19,7 @@ export default function Home() {
       <TestimonialsSection />
       {/* Whatsapp Icon */}
       <a
-        href="https://api.whatsapp.com/send?phone=+212654845780&text=Salut "
+        href="https://api.whatsapp.com/send?phone=+212611130509&text=Salut "
         target="_blank"
         rel="noopener noreferrer"
         style={{
@@ -43,7 +43,7 @@ export default function Home() {
       </a>
       {/* Phone Icon */}
       <a
-        href="tel:+212654845780"
+        href="tel:+212611130509"
         style={{
           position: "fixed",
           bottom: 10,
